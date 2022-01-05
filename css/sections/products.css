@@ -1,0 +1,35 @@
+/* PRODUCT CATEGORIES */
+.product-categories {
+  padding-top: 5rem;
+}
+
+.list-categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.category {
+  text-align: center;
+}
+
+.img-category-container {
+  position: relative;
+}
+
+.img-category {
+  max-width: 100%;
+  display: block;
+}
+
+.category a {
+  padding: 2rem;
+  display: block;
+  font-size: 2rem;
+  transition: all 0.2s ease;
+}
+
+.category a:hover {
+  color: #ffffff;
+  background-color: #037bc0;
+}

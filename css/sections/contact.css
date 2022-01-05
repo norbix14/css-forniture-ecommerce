@@ -1,0 +1,44 @@
+/* CONTACT SECTION */
+.form-contact-container {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.form-fieldset {
+  margin-bottom: 3rem;
+  border: 0.2rem solid #888;
+}
+
+.form-fieldset:last-child {
+  margin-bottom: 0;
+}
+
+.form-legend {
+  width: 100%;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  text-align: center;
+  background-color: #005485;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.input-data {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.input-data label {
+  flex-basis: 10rem;
+}
+
+.input,
+.textarea,
+.select {
+  border: 0.1rem solid #e1e1e1;
+  padding: 1rem;
+}
+
+.btn-contact {
+  margin-top: 5rem;
+}

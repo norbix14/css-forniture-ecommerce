@@ -1,0 +1,8 @@
+/* HERO */
+.hero {
+  min-height: 55rem;
+  background-image: url(../../img/principal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}

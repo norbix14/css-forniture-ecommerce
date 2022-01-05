@@ -1,0 +1,19 @@
+/* NAVBAR */
+.navigation-container {
+  border-top: 0.1rem solid #e1e1e1;
+}
+
+.navigation-nav {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  text-transform: capitalize;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #037bc0;
+}

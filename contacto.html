@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ecommerce. Tienda de Muebles.">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./css/stylesheet.css">
+  <title>Muebles E-commerce - Contacto</title>
+</head>
+<body>
+  <div>
+    <header class="header">
+      <h1 class="brand site-name text-center">Tienda <span>Muebles</span></h1>
+    </header>
+    <div class="navigation-container">
+      <nav class="nav container navigation-nav">
+        <a class="nav-link" id="index" href="./index.html">inicio</a>
+        <a class="nav-link" id="about" href="./nosotros.html">nosotros</a>
+        <a class="nav-link" id="store" href="./tienda.html">tienda</a>
+        <a class="nav-link" id="blog" href="./blog.html">blog</a>
+        <a class="nav-link" id="gallery" href="./galeria.html">galería</a>
+        <a class="nav-link" id="contact" href="./contacto.html">contacto</a>
+      </nav>
+    </div>
+    <main class="main container">
+      <h2 class="text-center">Contacto</h2>
+      <div class="form-contact-container">
+        <form class="contact-form" id="contactForm">
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">tus datos</legend>
+            <div class="input-data">
+              <label for="name">Nombre:</label>
+              <input class="flex-1 input" type="text" name="name" id="name" placeholder="Nombre" required>
+            </div>
+            <div class="input-data">
+              <label for="reference">Asunto:</label>
+              <input class="flex-1 input" type="text" name="reference" id="reference" placeholder="Asunto" required>
+            </div>
+            <div class="input-data">
+              <label for="email">Email:</label>
+              <input class="flex-1 input" type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="input-data">
+              <label for="tel">Teléfono</label>
+              <input class="flex-1 input" type="tel" name="tel" id="tel" placeholder="Teléfono" required>
+            </div>
+            <div class="input-data">
+              <label for="message">Mensaje</label>
+              <textarea class="flex-1 textarea" name="message" id="message" placeholder="Mensaje" required></textarea>
+            </div>
+          </fieldset>
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">país</legend>
+            <div class="input-data">
+              <label for="country">País</label>
+              <select class="select flex-1" name="country" id="country">
+                <option value="" disabled>-- Seleccionar --</option>
+                <option value="ar">Argentina</option>
+                <option value="mx">México</option>
+                <option value="br">Brasil</option>
+                <option value="ur">Uruguay</option>
+                <option value="bv">Bolivia</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">información extra</legend>
+            <div class="input-data">
+              <label for="client">Cliente</label>
+              <input class="input-radio" type="radio" name="type" id="client" value="client">
+            </div>
+            <div class="input-data">
+              <label for="provider">Proveedor</label>
+              <input class="input-radio" type="radio" name="type" id="provider" value="provider">
+            </div>
+            <div class="input-data">
+              <label for="category">Categoría</label>
+              <input class="input-list input flex-1" list="categories" name="categories" id="category">
+              <datalist id="categories">
+                <option value="Cocina">
+                <option value="Exterior">
+                <option value="Recamaras">
+                <option value="Oficina">
+                <option value="Televisión">
+              </datalist>
+            </div>
+          </fieldset>
+          <button class="btn btn-contact" type="submit">Enviar</button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-links container">
+        <div>
+          <h3>Categorías</h3>
+          <nav class="nav-footer">
+            <a href="#">cocina</a>
+            <a href="#">oficina</a>
+            <a href="#">jardín</a>
+            <a href="#">cocina</a>
+            <a href="#">dormitorio</a>
+          </nav>
+        </div>
+        <div>
+          <h3>Sobre nosotros</h3>
+          <nav class="nav-footer">
+            <a href="#">nuestra historia</a>
+            <a href="#">misión, visión y valores</a>
+            <a href="#">carreras</a>
+            <a href="#">política de privacidad</a>
+            <a href="#">términos del servicio</a>
+          </nav>
+        </div>
+        <div>
+          <h3>Soporte</h3>
+          <nav class="nav-footer">
+            <a href="#">preguntas frecuentes</a>
+            <a href="#">ayuda en línea</a>
+            <a href="#">confianza y seguridad</a>
+          </nav>
+        </div>
+      </div>
+      <p class="site-copyright">Todos los derechos reservados. Tienda Muebles. &copy;</p>
+    </footer>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+/* ABOUT US SECTION */
+/* ABOUT US IN INDEX */
+.about-us {
+  margin-top: 5rem;
+  padding: 10rem 0;
+  background-image: linear-gradient(
+    to right,
+    transparent 50%,
+    #037bc0 50%,
+    #037bc0 100%
+  ), url(../../img/nosotros.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%, 120rem;
+  background-position: left center;
+}
+
+.about-us-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 8rem;
+}
+
+.about-us-box {
+  grid-column: 2 / 3;
+  color: #fff;
+}
+
+/* ABOUT US PAGE */
+.about-us-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 4rem;
+}
+
+.about-us-history {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
