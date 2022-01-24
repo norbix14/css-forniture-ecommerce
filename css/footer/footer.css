@@ -6,12 +6,10 @@
 }
 
 .footer-links {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  text-align: center;
 }
 
-.footer-links h3 {
+.footer-links div h3 {
   margin-bottom: 0.5rem;
 }
 
@@ -35,4 +33,19 @@
   text-align: center;
   font-weight: 700;
   font-size: 2rem;
+}
+
+/* media queries */
+@media (min-width: 768px) {
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: unset;
+  }
+  .footer-links div h3 {
+    text-align: left;
+  }
+  .nav-footer a {
+    text-align: left;
+  }
 }

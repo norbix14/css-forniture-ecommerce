@@ -4,15 +4,15 @@
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 
 .link-img-gallery {
   position: relative;
   display: block;
-  height: 40rem;
-  width: 40rem;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -20,4 +20,11 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+/* media queries */
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

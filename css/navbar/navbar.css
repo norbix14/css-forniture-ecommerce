@@ -6,14 +6,27 @@
 .navigation-nav {
   padding: 2rem 0;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
 .nav-link {
   text-transform: capitalize;
   transition: all 0.2s ease;
+  font-size: 1.8rem;
 }
 
 .nav-link:hover {
   color: #037bc0;
+}
+
+/* media queries */
+@media (min-width: 768px) {
+  .navigation-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav-link {
+    font-size: 1.6rem;
+  }
 }

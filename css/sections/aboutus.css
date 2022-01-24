@@ -2,38 +2,75 @@
 /* ABOUT US IN INDEX */
 .about-us {
   margin-top: 5rem;
-  padding: 10rem 0;
   background-image: linear-gradient(
-    to right,
-    transparent 50%,
-    #037bc0 50%,
-    #037bc0 100%
-  ), url(../../img/nosotros.jpg);
+      to bottom,
+      transparent 50%,
+      #037bc0 50%,
+      #037bc0 100%
+    ),
+    url(../../img/nosotros.jpg);
   background-repeat: no-repeat;
-  background-size: 100%, 120rem;
-  background-position: left center;
+  background-size: 100%, 75rem;
+  background-position: center, top left;
 }
 
 .about-us-info {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 8rem;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .about-us-box {
-  grid-column: 2 / 3;
+  grid-row: 2 / 3;
   color: #fff;
+  padding: 3rem;
+}
+
+.about-us-box h2 {
+  margin: 0;
 }
 
 /* ABOUT US PAGE */
-.about-us-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 4rem;
+.about-us-img img {
+  height: 100%;
+  object-fit: cover;
 }
 
 .about-us-history {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 2rem;
+}
+
+/* media queries */
+@media (min-width: 768px) {
+  .about-us {
+    padding: 10rem 0;
+    background-image: linear-gradient(
+        to right,
+        transparent 50%,
+        #037bc0 50%,
+        #037bc0 100%
+      ),
+      url(../../img/nosotros.jpg);
+    background-size: 100%, 90rem;
+    background-position: left center;
+  }
+  .about-us-info {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: unset;
+    column-gap: 4rem;
+  }
+  .about-us-box {
+    grid-column: 2 / 3;
+    padding: 0;
+  }
+  .about-us-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    column-gap: 2rem;
+  }
+  .about-us-history {
+    padding: 0;
+  }
 }
